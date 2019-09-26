@@ -28,8 +28,7 @@
   </tbody>
 </table> -->
 
-<ng-container *ngIf="coffeeOrders">
-  <table mat-table [dataSource]="coffeeOrders" class="mat-elevation-z8">
+  <table mat-table [dataSource]="coffeeOrders$" class="mat-elevation-z8">
 
       <ng-container matColumnDef="addedByUser">
           <th mat-header-cell *matHeaderCellDef> Added by User </th>
@@ -72,4 +71,3 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-</ng-container>

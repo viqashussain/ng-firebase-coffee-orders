@@ -7,9 +7,10 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule, MatInputModule, MatButtonModule, MatTableModule } from '@angular/material';
+import { CoffeeTypesComponent } from './coffee-types/coffee-types.component';
 
 @NgModule({
-  declarations: [OrdersComponent, OrderListComponent, HomeComponent],
+  declarations: [OrdersComponent, OrderListComponent, HomeComponent, CoffeeTypesComponent],
   imports: [
     CommonModule,
     CoffeeOrdersRoutingModule,
